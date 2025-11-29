@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Itim", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav {
+  background: #e07537;
+  padding: 0 30px;
+  box-shadow: 2px 5px 15px #00000056;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    color: #000;
+  }
+  .menus {
+    display: flex;
+    align-items: center;
+    .normal-menu {
+      a {
+        color: #000000ac;
+        margin: 0 20px;
+        transition: 0.2s;
+
+        font-size: 21px;
+
+        &:hover {
+          color: #ffffff;
+        }
+        
+      }
+
+      a.active {
+        color: #ffffff;
+        transform: rotate(-5deg);
+      }
+    }
+    .login-signup-menu {
+      a button {
+        padding: 10px 20px;
+        border-radius: 4px;
+        border: none;
+        margin-left: 10px;
+        cursor: pointer;
+        transition: 0.2s;
+      }
+      > a:nth-child(1) button {
+        background: #5992d4;
+        color: #fffefecc;
+        &:hover {
+          background: #6abcd4;
+          color: #fff;
+        }
+      }
+      > a:nth-child(2) button {
+        background: #130316;
+        color: #ffffffcc;
+        &:hover {
+          background: #ddcee0;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  box-shadow: 2px 5px 15px inset #00000036;
+  background: #e07537;
+  height: 60px;
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
